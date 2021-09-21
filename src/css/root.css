@@ -1,0 +1,55 @@
+:root {
+    --clr-primary-100: hsl(96, 50%, 90%);
+    --clr-primary-200: hsl(96, 50%, 80%);
+    --clr-primary-300: hsl(96, 50%, 70%);
+    --clr-primary-400: hsl(96, 50%, 60%);
+    --clr-primary-500: hsl(96, 50%, 50%);
+    --clr-primary-600: hsl(96, 50%, 40%);
+    --clr-primary-700: hsl(96, 50%, 30%);
+    --clr-primary-800: hsl(96, 50%, 20%);
+    --clr-primary-900: hsl(96, 50%, 10%);
+
+    --clr-secondary-100: hsl(200, 71%, 90%);
+    --clr-secondary-200: hsl(200, 71%, 80%);
+    --clr-secondary-300: hsl(200, 71%, 70%);
+    --clr-secondary-400: hsl(200, 71%, 60%);
+    --clr-secondary-500: hsl(200, 71%, 50%);
+    --clr-secondary-600: hsl(200, 71%, 40%);
+    --clr-secondary-700: hsl(200, 71%, 30%);
+    --clr-secondary-800: hsl(200, 71%, 20%);
+    --clr-secondary-900: hsl(200, 71%, 10%);
+
+    --clr-error-100: hsl(3, 72%, 90%);
+    --clr-error-200: hsl(3, 72%, 80%);
+    --clr-error-300: hsl(3, 72%, 70%);
+    --clr-error-400: hsl(3, 72%, 60%);
+    --clr-error-500: hsl(3, 72%, 50%);
+    --clr-error-600: hsl(3, 72%, 40%);
+    --clr-error-700: hsl(3, 72%, 30%);
+    --clr-error-800: hsl(3, 72%, 20%);
+    --clr-error-900: hsl(3, 72%, 10%);
+
+    --clr-neutral-50: hsl(0, 0%, 95%);
+    --clr-neutral-100: hsl(0, 0%, 90%);
+    --clr-neutral-200: hsl(0, 0%, 80%);
+    --clr-neutral-300: hsl(0, 0%, 70%);
+    --clr-neutral-400: hsl(0, 0%, 60%);
+    --clr-neutral-500: hsl(0, 0%, 50%);
+    --clr-neutral-600: hsl(0, 0%, 40%);
+    --clr-neutral-700: hsl(0, 0%, 30%);
+    --clr-neutral-800: hsl(0, 0%, 20%);
+    --clr-neutral-900: hsl(0, 0%, 10%);
+    --clr-neutral-950: hsl(0, 0%, 5%);
+
+    --fs-300: 0.8rem;
+    --fs-400: 1rem;
+    --fs-500: clamp(1.125rem, 0.722vmin + 0.836rem, 1.414rem);
+    --fs-600: clamp(1.563rem, 1.09vmin + 1.127rem, 1.999rem);
+    --fs-700: clamp(1.953rem, 2.185vmin + 1.079rem, 2.827rem);
+    --fs-800: clamp(2.441rem, 3.893vmin + 0.884rem, 3.998rem);
+    --fs-900: clamp(3.052rem, 6.502vmin + 0.451rem, 5.653rem);
+
+    --inline-spacing: clamp(1rem, 10vmin + -3rem, 5rem);
+    --block-spacing: clamp(1rem, 2.5vmin, 2rem);
+    --spacing: 1rem;
+}

@@ -1,0 +1,7 @@
+{
+  "plugins": {
+    "postcss-custom-media": {},
+    "postcss-media-minmax": {},
+    "postcss-nesting": {}
+  }
+}

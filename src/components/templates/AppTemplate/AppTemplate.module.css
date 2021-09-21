@@ -1,0 +1,18 @@
+.app-template {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-block-size: 100%;
+  min-inline-size: 100%;
+  padding-block: var(--block-spacing);
+  padding-inline: var(--inline-spacing);
+}
+
+.app-template__main {
+  display: grid;
+  place-content: center;
+
+  flex: 1;
+}

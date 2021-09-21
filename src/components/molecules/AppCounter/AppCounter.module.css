@@ -1,0 +1,19 @@
+@import "/src/css/abstracts/media-queries";
+
+.app-counter {
+  display: grid;
+  place-items: center;
+  gap: var(--spacing);
+}
+
+.app-counter__text {
+  font-size: var(--fs-600);
+  @media (--small-viewport) {
+    grid-column: span 2;
+  }
+}
+
+.app-counter__actions {
+  display: flex;
+  gap: var(--spacing);
+}

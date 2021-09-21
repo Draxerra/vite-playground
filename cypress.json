@@ -1,0 +1,11 @@
+{
+  "baseUrl": "http://localhost:3000",
+  "downloadsFolder": "src/e2e/downloads",
+  "fixturesFolder": "src/e2e/fixtures",
+  "integrationFolder": "src/e2e/tests",
+  "pluginsFile": "src/e2e/plugins",
+  "screenshotsFolder": "src/e2e/screenshots",
+  "supportFile": "src/e2e/support",
+  "testFiles": "**/*.e2e.{ts,tsx}",
+  "videosFolder": "src/e2e/videos"
+}
