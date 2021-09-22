@@ -43,13 +43,13 @@
 
     --fs-300: 0.8rem;
     --fs-400: 1rem;
-    --fs-500: clamp(1.125rem, 0.722vmin + 0.836rem, 1.414rem);
-    --fs-600: clamp(1.563rem, 1.09vmin + 1.127rem, 1.999rem);
-    --fs-700: clamp(1.953rem, 2.185vmin + 1.079rem, 2.827rem);
-    --fs-800: clamp(2.441rem, 3.893vmin + 0.884rem, 3.998rem);
-    --fs-900: clamp(3.052rem, 6.502vmin + 0.451rem, 5.653rem);
+    --fs-500: clamp(1.125rem, 0.722vw + 0.836rem, 1.414rem);
+    --fs-600: clamp(1.563rem, 1.09vw + 1.127rem, 1.999rem);
+    --fs-700: clamp(1.953rem, 2.185vw + 1.079rem, 2.827rem);
+    --fs-800: clamp(2.441rem, 3.893vw + 0.884rem, 3.998rem);
+    --fs-900: clamp(3.052rem, 6.502vw + 0.451rem, 5.653rem);
 
-    --inline-spacing: clamp(1rem, 10vmin + -3rem, 5rem);
-    --block-spacing: clamp(1rem, 2.5vmin, 2rem);
+    --inline-spacing: clamp(1rem, 10vw + -3rem, 5rem);
+    --block-spacing: clamp(1rem, 2.5vw, 2rem);
     --spacing: 1rem;
 }
