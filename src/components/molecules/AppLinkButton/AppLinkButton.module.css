@@ -9,6 +9,13 @@
   &:not(.app-link-button--active) {
     color: var(--clr-primary-text);
     background-color: var(--clr-primary-surface2);
+    opacity: 0.62;
+    @media (--enhanced-motion) {
+      transition:
+          background-color 0.2s ease-in-out,
+          color 0.2s ease-in-out,
+          opacity 0.2s ease-in-out;
+    }
   }
 
   &:first-child {
@@ -28,5 +35,6 @@
   &:hover {
     --clr-primary-lightness: 50%;
     background-color: var(--clr-primary);
+    opacity: 1;
   }
 }
