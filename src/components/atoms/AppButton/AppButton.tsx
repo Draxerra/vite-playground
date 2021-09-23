@@ -17,7 +17,7 @@ const AppButton: FC<AppButtonProps> = ({
   const Component = tag;
   return (
     <Component
-      className={classNames(className, styles["app-button"])}
+      className={classNames(className, styles["app-button"], "primary")}
       {...props}
     >
       {children}
