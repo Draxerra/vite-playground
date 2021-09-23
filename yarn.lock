@@ -1865,7 +1865,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/dom@npm:^8.0.0, @testing-library/dom@npm:^8.1.0, @testing-library/dom@npm:^8.5.0":
+"@testing-library/dom@npm:^8.0.0, @testing-library/dom@npm:^8.1.0":
   version: 8.5.0
   resolution: "@testing-library/dom@npm:8.5.0"
   dependencies:
@@ -1878,6 +1878,22 @@ __metadata:
     lz-string: ^1.4.4
     pretty-format: ^27.0.2
   checksum: fde0e9086de62e92a50e866a3b7d00c05ebdd054f5b044652b80726c82733f50fd290dda99a8aba4a3ff763ea16910c1916f0c8fbadd0a1b48ffdc159eafcb9c
+  languageName: node
+  linkType: hard
+
+"@testing-library/dom@npm:^8.6.0":
+  version: 8.6.0
+  resolution: "@testing-library/dom@npm:8.6.0"
+  dependencies:
+    "@babel/code-frame": ^7.10.4
+    "@babel/runtime": ^7.12.5
+    "@types/aria-query": ^4.2.0
+    aria-query: ^4.2.2
+    chalk: ^4.1.0
+    dom-accessibility-api: ^0.5.6
+    lz-string: ^1.4.4
+    pretty-format: ^27.0.2
+  checksum: 72a3a74b4415e49724e7b3b9c92b8dbbde3604e1bd857e9473e15a00984f6a412b57ec67dbfa0a1635e1a009e79b0d7c7a8002dd1247eb0a7731e07cf138bc1e
   languageName: node
   linkType: hard
 
@@ -2087,7 +2103,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^16.9.4":
+"@types/node@npm:*, @types/node@npm:^16.9.6":
   version: 16.9.6
   resolution: "@types/node@npm:16.9.6"
   checksum: 1c11ff4b58af87ddade05784e90bb5a2fe01f461ce489fdb1428d89e709695a26b0dcbac0520305911f5e4017561416747e544f1b9ec36649ccbfad6ffff4a0a
@@ -2136,7 +2152,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-router-dom@npm:^5.1.9":
+"@types/react-router-dom@npm:^5.3.0":
   version: 5.3.0
   resolution: "@types/react-router-dom@npm:5.3.0"
   dependencies:
@@ -2157,7 +2173,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:^17.0.22":
+"@types/react@npm:*, @types/react@npm:^17.0.24":
   version: 17.0.24
   resolution: "@types/react@npm:17.0.24"
   dependencies:
@@ -3935,14 +3951,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-testing-library@npm:^4.12.3":
-  version: 4.12.3
-  resolution: "eslint-plugin-testing-library@npm:4.12.3"
+"eslint-plugin-testing-library@npm:^4.12.4":
+  version: 4.12.4
+  resolution: "eslint-plugin-testing-library@npm:4.12.4"
   dependencies:
     "@typescript-eslint/experimental-utils": ^4.30.0
   peerDependencies:
     eslint: ^7.5.0
-  checksum: f9eca047b2e481739567510f0d07132b6b36178bd6881d608a0f7c6f2f61a1140848e987c40a3b7fb42e8d4953a844f2eb4e12489772b7c5578aa13672c8ee6e
+  checksum: 8b4c65b22dd3c2bdcd51db590b0c931b9ae8f6a23b4008047e78fa3b9dde30bfc58e3539a9788a07183d23cbf40ec49f892af9ba0fc4f0d850c0eb81560627b7
   languageName: node
   linkType: hard
 
@@ -6402,7 +6418,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nanoid@npm:^3.1.23":
+"nanocolors@npm:^0.1.5":
+  version: 0.1.12
+  resolution: "nanocolors@npm:0.1.12"
+  checksum: 2ce58f57006ddd1d2680d05fe21f54d858db8ba81bd13381598ddc546f7637e33c4407da2ea7da40ea1c96794250e7c14a4d00358b48eeae4d917d6a92bafe4c
+  languageName: node
+  linkType: hard
+
+"nanoid@npm:^3.1.23, nanoid@npm:^3.1.25":
   version: 3.1.25
   resolution: "nanoid@npm:3.1.25"
   bin:
@@ -6833,6 +6856,17 @@ __metadata:
     nanoid: ^3.1.23
     source-map-js: ^0.6.2
   checksum: ff55b91bea21f42c2a94d77fd05c3f66dd15889c68506cf1dbb9cdee8c3b9e9d0e219bcbc6e61a107bd63e3cac0670176486e2a5794c106a4e1b9babceb79317
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^8.3.7":
+  version: 8.3.7
+  resolution: "postcss@npm:8.3.7"
+  dependencies:
+    nanocolors: ^0.1.5
+    nanoid: ^3.1.25
+    source-map-js: ^0.6.2
+  checksum: 6b8c80611045787efa9900b1a278ec71393a12530a1c1f14baadcd6076e753791edd9bb9ef36c258cac450bc95dc3542ce2a4b6f21d5087875b91daa87422fc5
   languageName: node
   linkType: hard
 
@@ -8596,16 +8630,16 @@ typescript@^4.4.3:
     "@jest/types": ^27.1.1
     "@reduxjs/toolkit": ^1.6.1
     "@testing-library/cypress": ^8.0.1
-    "@testing-library/dom": ^8.5.0
+    "@testing-library/dom": ^8.6.0
     "@testing-library/jest-dom": ^5.14.1
     "@testing-library/react": ^12.1.0
     "@testing-library/user-event": ^13.2.1
     "@types/jest": ^27.0.2
-    "@types/node": ^16.9.4
-    "@types/react": ^17.0.22
+    "@types/node": ^16.9.6
+    "@types/react": ^17.0.24
     "@types/react-dom": ^17.0.9
     "@types/react-redux": ^7.1.18
-    "@types/react-router-dom": ^5.1.9
+    "@types/react-router-dom": ^5.3.0
     "@types/testing-library__jest-dom": ^5.14.1
     "@typescript-eslint/eslint-plugin": ^4.31.2
     "@typescript-eslint/parser": ^4.31.2
@@ -8621,10 +8655,10 @@ typescript@^4.4.3:
     eslint-plugin-prettier: ^4.0.0
     eslint-plugin-react: ^7.26.0
     eslint-plugin-react-hooks: ^4.2.0
-    eslint-plugin-testing-library: ^4.12.3
+    eslint-plugin-testing-library: ^4.12.4
     identity-obj-proxy: ^3.0.0
     jest: ^27.2.1
-    postcss: ^8.3.6
+    postcss: ^8.3.7
     postcss-custom-media: ^8.0.0
     postcss-media-minmax: ^5.0.0
     postcss-nesting: ^8.0.1
