@@ -8,7 +8,7 @@
 
 .app-counter__text {
   font-size: var(--fs-600);
-  @media (--small-viewport) {
+  @media (--sm-and-higher) {
     grid-column: span 2;
   }
 }
