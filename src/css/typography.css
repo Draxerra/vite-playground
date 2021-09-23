@@ -1,7 +1,15 @@
+@import "./abstracts/media-queries.css";
+
 body {
     font-family: "Roboto", sans-serif;
     background-color: var(--clr-primary-surface);
     color: var(--clr-primary-text);
+
+    @media (--enhanced-motion) {
+        transition:
+            background-color 0.2s ease-in-out,
+            color 0.2s ease-in-out;
+    }
 }
 
 h1 {

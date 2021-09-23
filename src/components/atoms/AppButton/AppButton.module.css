@@ -1,3 +1,5 @@
+@import "/src/css/abstracts/media-queries.css";
+
 .app-button {
   padding-block: 0.75em;
   padding-inline: 1em;
@@ -8,6 +10,12 @@
   text-transform: uppercase;
   letter-spacing: 1.5px;
   cursor: pointer;
+
+  @media (--enhanced-motion) {
+    transition:
+        background-color 0.2s ease-in-out,
+        color 0.2s ease-in-out;
+  }
 
   /* Generated with https://shadows.brumm.af/ */
   box-shadow:

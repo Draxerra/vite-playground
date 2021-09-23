@@ -1,3 +1,5 @@
+@import "/src/css/abstracts/media-queries.css";
+
 .app-link-button {
   text-decoration: none;
   color: inherit;
@@ -25,7 +27,6 @@
 
   &:hover {
     --clr-primary-lightness: 50%;
-    color: var(--clr-primary-text);
     background-color: var(--clr-primary);
   }
 }

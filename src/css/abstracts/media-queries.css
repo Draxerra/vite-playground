@@ -3,3 +3,4 @@
 @custom-media --large-viewport (width >= 80em);
 
 @custom-media --dark-theme (prefers-color-scheme: dark);
+@custom-media --enhanced-motion (prefers-reduced-motion: no-preference);
