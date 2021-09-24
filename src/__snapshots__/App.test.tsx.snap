@@ -32,18 +32,20 @@ exports[`App should match snapshot 1`] = `
           class="app-counter"
         >
           <span
+            aria-live="polite"
             class="app-counter__text"
+            role="region"
           >
             Current Count: 0
           </span>
           <button
-            aria-label="Increment value"
+            aria-label="Increment counter"
             class="app-button"
           >
             Increment
           </button>
           <button
-            aria-label="Decrement value"
+            aria-label="Decrement counter"
             class="app-button"
           >
             Decrement
