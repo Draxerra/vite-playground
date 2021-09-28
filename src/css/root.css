@@ -19,7 +19,6 @@
 :root {
     accent-color: var(--clr-primary);
     
-    color-scheme: light;
     --clr-primary-text: hsl(var(--clr-primary-hue) var(--clr-primary-saturation) 5%);
     --clr-primary-surface: hsl(var(--clr-primary-hue) 10% 90%);
     --clr-primary-surface2: hsl(var(--clr-primary-hue) 20% 80%);
@@ -27,7 +26,6 @@
     --shadow-strength: .02;
 
     @media (--dark-theme) {
-        color-scheme: dark;
         --clr-primary-text: hsl(var(--clr-primary-hue) 20% 85%);
         --clr-primary-surface: hsl(var(--clr-primary-hue) 10% 10%);
         --clr-primary-surface2: hsl(var(--clr-primary-hue) 20% 20%);
