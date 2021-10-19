@@ -6,17 +6,14 @@ import styles from "./AppTemplate.module.css";
 import AppNav from "~/components/organisms/AppNav";
 import AppHome from "~/components/pages/AppHome";
 
-const AppContact = lazy(
-  () =>
-    import(/* webpackChunkName: "contact" */ "~/components/pages/AppContact")
-);
+const AppContact = lazy(() => import("~/components/pages/AppContact"));
 const renderLoader = () => <div>Loading...</div>;
 
 const AppTemplate: FC = () => (
   <Router>
-    <div className={styles["app-template"]}>
+    <div className={styles.appTemplate}>
       <AppNav />
-      <main className={styles["app-template__main"]}>
+      <main className={styles.appTemplateMain}>
         <Switch>
           <Route exact path="/">
             <AppHome />

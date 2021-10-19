@@ -12,8 +12,3 @@
     grid-column: span 2;
   }
 }
-
-.app-counter__actions {
-  display: flex;
-  gap: var(--spacing);
-}

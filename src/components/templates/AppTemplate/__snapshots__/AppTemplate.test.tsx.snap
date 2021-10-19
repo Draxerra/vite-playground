@@ -3,50 +3,50 @@
 exports[`App Template should match snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="app-template"
+    class="appTemplate"
   >
     <nav
-      class="app-nav"
+      class="appNav"
     >
       <a
         aria-current="page"
         aria-label="Navigate to Home Page"
-        class="app-link-button app-link-button--active app-button"
+        class="appLinkButton appLinkButtonActive appButton"
         href="/"
       >
         Home
       </a>
       <a
         aria-label="Navigate to Contact Page"
-        class="app-link-button app-button"
+        class="appLinkButton appButton"
         href="/contact"
       >
         Contact
       </a>
     </nav>
     <main
-      class="app-template__main"
+      class="appTemplateMain"
     >
       <div>
         <div
-          class="app-counter"
+          class="appCounter"
         >
           <span
             aria-live="polite"
-            class="app-counter__text"
+            class="appCounterText"
             role="region"
           >
             Current Count: 0
           </span>
           <button
             aria-label="Increment counter"
-            class="app-button"
+            class="appButton"
           >
             Increment
           </button>
           <button
             aria-label="Decrement counter"
-            class="app-button"
+            class="appButton"
           >
             Decrement
           </button>

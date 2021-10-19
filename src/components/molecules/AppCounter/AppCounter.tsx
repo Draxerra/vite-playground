@@ -17,12 +17,8 @@ const AppCounter: FC<AppCounterProps> = ({
   className,
   ...props
 }) => (
-  <div {...props} className={classNames(className, styles["app-counter"])}>
-    <span
-      className={styles["app-counter__text"]}
-      role="region"
-      aria-live="polite"
-    >
+  <div {...props} className={classNames(className, styles.appCounter)}>
+    <span className={styles.appCounterText} role="region" aria-live="polite">
       Current Count: {children}
     </span>
     <AppButton aria-label="Increment counter" onClick={increment}>

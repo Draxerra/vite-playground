@@ -7,6 +7,11 @@ import tsconfigPaths from "vite-tsconfig-paths";
 // https://vitejs.dev/config/
 export default defineConfig({
   cacheDir: ".vite",
+  css: {
+    modules: {
+      localsConvention: "camelCaseOnly",
+    },
+  },
   plugins: [
     reactRefresh(),
     tsconfigPaths(),

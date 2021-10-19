@@ -4,7 +4,7 @@ exports[`App Link Button should match snapshot 1`] = `
 <DocumentFragment>
   <a
     aria-current="page"
-    class="app-link-button app-link-button--active app-button"
+    class="appLinkButton appLinkButtonActive appButton"
     href="/"
   >
     Home

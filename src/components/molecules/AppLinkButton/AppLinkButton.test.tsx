@@ -17,8 +17,8 @@ describe("App Link Button", () => {
       wrapper: Router,
     });
     const linkButton = screen.getByText("Contact");
-    expect(linkButton).not.toHaveClass("app-link-button--active");
+    expect(linkButton).not.toHaveClass("appLinkButtonActive");
     userEvent.click(linkButton);
-    expect(linkButton).toHaveClass("app-link-button--active");
+    expect(linkButton).toHaveClass("appLinkButtonActive");
   });
 });

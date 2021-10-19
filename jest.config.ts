@@ -5,8 +5,8 @@ const config: Config.InitialOptions = {
   collectCoverageFrom: ["src/**/*.{ts,tsx}", "!src/**/*.d.ts"],
   coveragePathIgnorePatterns: ["e2e"],
   moduleNameMapper: {
-    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy",
     "~/(.*)": "<rootDir>/src/$1",
+    "\\.module.css$": "identity-obj-proxy",
   },
   setupFilesAfterEnv: ["<rootDir>/setupTests.ts"],
   resetMocks: true,

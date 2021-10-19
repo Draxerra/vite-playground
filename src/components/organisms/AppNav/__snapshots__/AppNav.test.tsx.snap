@@ -3,19 +3,19 @@
 exports[`App Nav should match snapshot 1`] = `
 <DocumentFragment>
   <nav
-    class="app-nav"
+    class="appNav"
   >
     <a
       aria-current="page"
       aria-label="Navigate to Home Page"
-      class="app-link-button app-link-button--active app-button"
+      class="appLinkButton appLinkButtonActive appButton"
       href="/"
     >
       Home
     </a>
     <a
       aria-label="Navigate to Contact Page"
-      class="app-link-button app-button"
+      class="appLinkButton appButton"
       href="/contact"
     >
       Contact

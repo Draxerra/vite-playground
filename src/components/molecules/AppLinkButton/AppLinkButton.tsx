@@ -33,11 +33,8 @@ const AppLinkButton: FC<AppLinkButtonProps> = ({
   ...props
 }) => (
   <NavLink
-    activeClassName={classNames(
-      activeClassName,
-      styles["app-link-button--active"]
-    )}
-    className={classNames(className, styles["app-link-button"])}
+    activeClassName={classNames(activeClassName, styles.appLinkButtonActive)}
+    className={classNames(className, styles.appLinkButton)}
     component={AppAnchorButton}
     {...props}
   />

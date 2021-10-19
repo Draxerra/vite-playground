@@ -4,24 +4,24 @@ exports[`App Home should match snapshot 1`] = `
 <DocumentFragment>
   <div>
     <div
-      class="app-counter"
+      class="appCounter"
     >
       <span
         aria-live="polite"
-        class="app-counter__text"
+        class="appCounterText"
         role="region"
       >
         Current Count: 0
       </span>
       <button
         aria-label="Increment counter"
-        class="app-button"
+        class="appButton"
       >
         Increment
       </button>
       <button
         aria-label="Decrement counter"
-        class="app-button"
+        class="appButton"
       >
         Decrement
       </button>
