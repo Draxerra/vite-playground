@@ -3,7 +3,7 @@
 * {
     --clr-primary-hue: 196;
     --clr-primary-saturation: 50%;
-    --clr-primary-lightness: 50%;
+    --clr-primary-lightness: 65%;
 
     --clr-primary: hsl(var(--clr-primary-hue) var(--clr-primary-saturation) var(--clr-primary-lightness));
 
@@ -11,7 +11,7 @@
         --clr-primary: hsl(
             var(--clr-primary-hue)
             calc(var(--clr-primary-saturation) / 2)
-            calc(var(--clr-primary-lightness) / 1.5)
+            calc(var(--clr-primary-lightness) / 2.5)
         );
     }
 }
@@ -26,7 +26,7 @@
     --shadow-strength: .02;
 
     @media (--dark-theme) {
-        --clr-primary-text: hsl(var(--clr-primary-hue) 20% 85%);
+        --clr-primary-text: hsl(var(--clr-primary-hue) 20% 95%);
         --clr-primary-surface: hsl(var(--clr-primary-hue) 10% 10%);
         --clr-primary-surface2: hsl(var(--clr-primary-hue) 20% 20%);
         --clr-primary-surface-shadow: var(--clr-primary-hue) 50% 3%;
