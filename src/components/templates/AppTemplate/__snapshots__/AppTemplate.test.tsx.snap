@@ -2,7 +2,7 @@
 
 exports[`App Template should match snapshot 1`] = `
 <DocumentFragment>
-  <div
+  <main
     class="appTemplate"
   >
     <nav
@@ -24,8 +24,8 @@ exports[`App Template should match snapshot 1`] = `
         Contact
       </a>
     </nav>
-    <main
-      class="appTemplateMain"
+    <section
+      class="appTemplatePage"
     >
       <div>
         <div
@@ -52,7 +52,7 @@ exports[`App Template should match snapshot 1`] = `
           </button>
         </div>
       </div>
-    </main>
-  </div>
+    </section>
+  </main>
 </DocumentFragment>
 `;

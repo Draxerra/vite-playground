@@ -10,7 +10,7 @@
   padding-inline: var(--inline-spacing);
 }
 
-.app-template__main {
+.app-template__page {
   display: grid;
   place-content: center;
 

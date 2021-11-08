@@ -1,5 +1,5 @@
 import React, { FC, lazy, Suspense } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import styles from "./AppTemplate.module.css";
 
@@ -11,21 +11,22 @@ const renderLoader = () => <div>Loading...</div>;
 
 const AppTemplate: FC = () => (
   <Router>
-    <div className={styles.appTemplate}>
+    <main className={styles.appTemplate}>
       <AppNav />
-      <main className={styles.appTemplateMain}>
-        <Switch>
-          <Route exact path="/">
-            <AppHome />
-          </Route>
-          <Route path="/contact">
-            <Suspense fallback={renderLoader()}>
-              <AppContact />
-            </Suspense>
-          </Route>
-        </Switch>
-      </main>
-    </div>
+      <section className={styles.appTemplatePage}>
+        <Routes>
+          <Route path="/" element={<AppHome />} />
+          <Route
+            path="contact"
+            element={
+              <Suspense fallback={renderLoader()}>
+                <AppContact />
+              </Suspense>
+            }
+          />
+        </Routes>
+      </section>
+    </main>
   </Router>
 );
 

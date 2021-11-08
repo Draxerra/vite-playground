@@ -1,21 +1,17 @@
 @import "/src/css/abstracts/media-queries.css";
 
 .app-button {
+  --button-border-radius: 1ex;
+
   padding-block: 0.75em;
   padding-inline: 1em;
   border: 0;
-  border-radius: 8px;
+  border-radius: var(--button-border-radius);
   background-color: var(--clr-primary);
   color: var(--clr-primary-text);
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.2ch;
   cursor: pointer;
-
-  @media (--enhanced-motion) {
-    transition:
-        background-color 0.2s ease-in-out,
-        color 0.2s ease-in-out;
-  }
 
   /* Generated with https://shadows.brumm.af/ */
   box-shadow:
@@ -26,8 +22,16 @@
     0px 41.8px 33.4px hsl(var(--clr-primary-surface-shadow) / calc(var(--shadow-strength) + 0.03)),
     0px 100px 80px hsl(var(--clr-primary-surface-shadow) / calc(var(--shadow-strength) + 0.05));
 
+  @media (--enhanced-motion) {
+    --transition-properties: background-color, color;
+    transition-property: var(--transition-properties);
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    will-change: var(--transition-properties);
+  }
+
   &:hover {
-    --clr-primary-lightness: 55%;
+    background-color: var(--clr-primary-hover);
   }
 
   &:focus {
@@ -36,6 +40,7 @@
 
   &:focus-visible {
     outline: 1px solid;
-    outline-offset: 5px;
+    outline-offset: 0.75ex;
+    z-index: 1;
   }
 }

@@ -4,3 +4,5 @@
 
 @custom-media --dark-theme (prefers-color-scheme: dark);
 @custom-media --enhanced-motion (prefers-reduced-motion: no-preference);
+@custom-media --more-contrast (prefers-contrast: more);
+@custom-media --less-contrast (prefers-contrast: less);

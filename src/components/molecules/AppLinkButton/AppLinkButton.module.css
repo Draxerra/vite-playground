@@ -2,29 +2,22 @@
 
 .app-link-button {
   text-decoration: none;
-  color: inherit;
   box-shadow: none;
   border-radius: 0;
 
   &:not(.app-link-button--active) {
     background-color: var(--clr-primary-surface2);
-    opacity: 0.75;
-    @media (--enhanced-motion) {
-      transition:
-          background-color 0.2s ease-in-out,
-          color 0.2s ease-in-out,
-          opacity 0.2s ease-in-out;
-    }
+    --clr-primary-text-alpha: .8;
   }
 
   &:first-child {
-    border-start-start-radius: 8px;
-    border-end-start-radius: 8px;
+    border-start-start-radius: var(--button-border-radius);
+    border-end-start-radius: var(--button-border-radius);
   }
 
   &:last-child {
-    border-start-end-radius: 8px;
-    border-end-end-radius: 8px;
+    border-start-end-radius: var(--button-border-radius);
+    border-end-end-radius: var(--button-border-radius);
   }
 
   &:focus-visible {
@@ -33,6 +26,6 @@
 
   &:hover {
     background-color: var(--clr-primary);
-    opacity: 1;
+    --clr-primary-text-alpha: 1;
   }
 }

@@ -3,20 +3,21 @@ import classNames from "classnames";
 
 import styles from "./AppButton.module.css";
 
-type AppButtonProps = {
-  tag?: "a" | "button";
-} & JSX.IntrinsicElements["a"] &
-  JSX.IntrinsicElements["button"];
+type AppButtonProps =
+  | ({ tag: "a" } & JSX.IntrinsicElements["a"])
+  | ({ tag?: "button" } & JSX.IntrinsicElements["button"]);
 
 const AppButton: FC<AppButtonProps> = ({
   children,
   className,
-  tag = "button",
+  tag: Component = "button",
   ...props
 }) => {
-  const Component = tag;
   return (
-    <Component className={classNames(className, styles.appButton)} {...props}>
+    <Component
+      className={classNames(className, styles.appButton)}
+      {...(props as unknown)}
+    >
       {children}
     </Component>
   );

@@ -8,7 +8,7 @@ import styles from "./AppNav.module.css";
 type AppNavProps = JSX.IntrinsicElements["nav"];
 const AppNav: FC<AppNavProps> = ({ className, ...props }) => (
   <nav {...props} className={classNames(className, styles.appNav)}>
-    <AppLinkButton to="/" exact aria-label="Navigate to Home Page">
+    <AppLinkButton to="/" aria-label="Navigate to Home Page">
       Home
     </AppLinkButton>
     <AppLinkButton to="/contact" aria-label="Navigate to Contact Page">
