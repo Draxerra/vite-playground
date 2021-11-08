@@ -7,7 +7,7 @@ exports[`App Counter should match snapshot 1`] = `
   >
     <span
       aria-live="polite"
-      class="appCounterText"
+      class="appCounterText fs-600"
       role="region"
     >
       Current Count: 10
