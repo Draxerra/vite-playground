@@ -11,9 +11,12 @@ const renderLoader = () => <div>Loading...</div>;
 
 const AppTemplate: FC = () => (
   <Router>
-    <main className={styles.appTemplate}>
-      <AppNav />
-      <section className={styles.appTemplatePage}>
+    <div className={styles.appTemplate}>
+      <header>
+        <h1 className="sr-only">Vite React Test App</h1>
+        <AppNav />
+      </header>
+      <main className={styles.appTemplatePage}>
         <Routes>
           <Route path="/" element={<AppHome />} />
           <Route
@@ -25,8 +28,9 @@ const AppTemplate: FC = () => (
             }
           />
         </Routes>
-      </section>
-    </main>
+      </main>
+      <footer></footer>
+    </div>
   </Router>
 );
 

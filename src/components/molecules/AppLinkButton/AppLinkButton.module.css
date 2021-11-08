@@ -10,12 +10,12 @@
     --clr-primary-text-alpha: .8;
   }
 
-  &:first-child {
+  &:first-of-type {
     border-start-start-radius: var(--button-border-radius);
     border-end-start-radius: var(--button-border-radius);
   }
 
-  &:last-child {
+  &:last-of-type {
     border-start-end-radius: var(--button-border-radius);
     border-end-end-radius: var(--button-border-radius);
   }

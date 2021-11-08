@@ -2,8 +2,12 @@
 
 exports[`App Contact should match snapshot 1`] = `
 <DocumentFragment>
-  <span>
-    Contact Page
-  </span>
+  <section>
+    <h2
+      class="fs-600"
+    >
+      Contact Page
+    </h2>
+  </section>
 </DocumentFragment>
 `;

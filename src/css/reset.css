@@ -9,4 +9,6 @@
 button {
     font-family: unset;
     font-size: var(--fs-400);
+    letter-spacing: inherit;
+    word-spacing: inherit;
 }

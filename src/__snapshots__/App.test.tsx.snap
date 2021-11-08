@@ -2,55 +2,69 @@
 
 exports[`App should match snapshot 1`] = `
 <DocumentFragment>
-  <main
+  <div
     class="appTemplate"
   >
-    <nav
-      class="appNav"
-    >
-      <a
-        aria-current="page"
-        aria-label="Navigate to Home Page"
-        class="appLinkButton appLinkButtonActive appButton"
-        href="/"
+    <header>
+      <h1
+        class="sr-only"
       >
-        Home
-      </a>
-      <a
-        aria-label="Navigate to Contact Page"
-        class="appLinkButton appButton"
-        href="/contact"
+        Vite React Test App
+      </h1>
+      <nav
+        class="appNav"
       >
-        Contact
-      </a>
-    </nav>
-    <section
+        <h2
+          class="sr-only"
+        >
+          Site Navigation
+        </h2>
+        <a
+          aria-current="page"
+          aria-label="Navigate to Home Page"
+          class="appLinkButton appLinkButtonActive appButton"
+          href="/"
+        >
+          Home
+        </a>
+        <a
+          aria-label="Navigate to Contact Page"
+          class="appLinkButton appButton"
+          href="/contact"
+        >
+          Contact
+        </a>
+      </nav>
+    </header>
+    <main
       class="appTemplatePage"
     >
-      <div
+      <section
         class="appCounter"
       >
-        <span
+        <h2
           aria-live="polite"
           class="appCounterText fs-600"
-          role="region"
         >
           Current Count: 0
-        </span>
+        </h2>
         <button
           aria-label="Increment counter"
           class="appButton"
+          type="button"
         >
           Increment
         </button>
         <button
           aria-label="Decrement counter"
           class="appButton"
+          type="button"
         >
           Decrement
         </button>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
+    <footer />
+  </div>
 </DocumentFragment>
 `;

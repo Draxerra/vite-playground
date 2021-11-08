@@ -10,7 +10,8 @@
   background-color: var(--clr-primary);
   color: var(--clr-primary-text);
   text-transform: uppercase;
-  letter-spacing: 0.2ch;
+  letter-spacing: 0.12em;
+  word-spacing: 0.16em;
   cursor: pointer;
 
   /* Generated with https://shadows.brumm.af/ */

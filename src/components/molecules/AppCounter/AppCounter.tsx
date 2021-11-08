@@ -8,7 +8,7 @@ import AppButton from "~/components/atoms/AppButton";
 type AppCounterProps = {
   decrement: () => void;
   increment: () => void;
-} & JSX.IntrinsicElements["div"];
+} & JSX.IntrinsicElements["section"];
 
 const AppCounter: FC<AppCounterProps> = ({
   decrement,
@@ -17,20 +17,19 @@ const AppCounter: FC<AppCounterProps> = ({
   className,
   ...props
 }) => (
-  <div {...props} className={classNames(className, styles.appCounter)}>
-    <span
+  <section {...props} className={classNames(className, styles.appCounter)}>
+    <h2
       className={classNames(styles.appCounterText, "fs-600")}
-      role="region"
       aria-live="polite"
     >
       Current Count: {children}
-    </span>
-    <AppButton aria-label="Increment counter" onClick={increment}>
+    </h2>
+    <AppButton aria-label="Increment counter" onClick={increment} type="button">
       Increment
     </AppButton>
-    <AppButton aria-label="Decrement counter" onClick={decrement}>
+    <AppButton aria-label="Decrement counter" onClick={decrement} type="button">
       Decrement
     </AppButton>
-  </div>
+  </section>
 );
 export default AppCounter;

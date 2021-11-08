@@ -5,6 +5,11 @@ exports[`App Nav should match snapshot 1`] = `
   <nav
     class="appNav"
   >
+    <h2
+      class="sr-only"
+    >
+      Site Navigation
+    </h2>
     <a
       aria-current="page"
       aria-label="Navigate to Home Page"

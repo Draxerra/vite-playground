@@ -44,7 +44,7 @@
     --fs-800: clamp(2.441rem, 3.893vw + 0.884rem, 3.998rem);
     --fs-900: clamp(3.052rem, 6.502vw + 0.451rem, 5.653rem);
 
-    --inline-spacing: clamp(1rem, 10vw - 3rem, 5rem);
-    --block-spacing: clamp(1rem, 2.5vw, 2rem);
-    --spacing: 1rem;
+    --inline-spacing: clamp(1em, 10vw - 3em, 5em);
+    --block-spacing: clamp(1em, 2.5vw, 2em);
+    --spacing: 1em;
 }
