@@ -15,8 +15,8 @@ const AppButton: FC<AppButtonProps> = ({
 }) => {
   return (
     <Component
-      className={classNames(className, styles.appButton)}
       {...(props as unknown)}
+      className={classNames(className, styles.appButton)}
     >
       {children}
     </Component>

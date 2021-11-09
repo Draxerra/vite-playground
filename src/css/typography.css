@@ -41,6 +41,16 @@ body {
     font-size: var(--fs-300);
 }
 
-.sr-only {
-    display: none;
+.sr-only:not(:active, :focus-within) {
+    height: 1px;
+    width: 1px;
+
+    position: absolute;
+
+    padding: 0;
+    margin: -1px;
+
+    clip-path: inset(50%);
+    overflow: hidden;
+    white-space: nowrap;
 }

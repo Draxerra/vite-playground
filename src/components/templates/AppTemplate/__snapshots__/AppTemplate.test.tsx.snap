@@ -11,6 +11,12 @@ exports[`App Template should match snapshot 1`] = `
       >
         Vite React Test App
       </h1>
+      <a
+        class="appSkipLink appButton"
+        href="#main"
+      >
+        Skip to main content
+      </a>
       <nav
         class="appNav"
       >
@@ -38,6 +44,7 @@ exports[`App Template should match snapshot 1`] = `
     </header>
     <main
       class="appTemplatePage"
+      id="main"
     >
       <section
         class="appCounter"

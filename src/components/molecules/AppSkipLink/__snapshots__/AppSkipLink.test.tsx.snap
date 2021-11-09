@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Skip Link should match snapshot 1`] = `
+<DocumentFragment>
+  <a
+    class="appSkipLink appButton"
+    href="#test"
+  >
+    Skip to main content
+  </a>
+</DocumentFragment>
+`;

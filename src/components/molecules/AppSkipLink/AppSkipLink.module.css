@@ -1,0 +1,21 @@
+@import "/src/css/abstracts/media-queries.css";
+
+.app-skip-link {
+    position: fixed;
+    top: calc(var(--outline-width) + var(--outline-offset) + 10px);
+    left: calc(var(--outline-width) + var(--outline-offset) + 10px);
+
+    text-decoration: none;
+    transform: translateY(-200%);
+
+    @media (--enhanced-motion) {
+        transition:
+            transform
+            calc(var(--transition-duration) * 2)
+            var(--transition-timing-function);
+    }
+
+    &:focus-visible {
+        transform: translateY(0);
+    }
+}

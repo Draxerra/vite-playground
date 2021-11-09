@@ -2,6 +2,8 @@
 
 .app-button {
   --button-border-radius: 1ex;
+  --outline-width: 1px;
+  --outline-offset: 0.75ex;
 
   padding-block: 0.75em;
   padding-inline: 1em;
@@ -24,11 +26,9 @@
     0px 100px 80px hsl(var(--clr-primary-surface-shadow) / calc(var(--shadow-strength) + 0.05));
 
   @media (--enhanced-motion) {
-    --transition-properties: background-color, color;
-    transition-property: var(--transition-properties);
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in-out;
-    will-change: var(--transition-properties);
+    transition-property: background-color, color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
   }
 
   &:hover {
@@ -40,8 +40,8 @@
   }
 
   &:focus-visible {
-    outline: 1px solid;
-    outline-offset: 0.75ex;
+    outline: var(--outline-width) solid;
+    outline-offset: var(--outline-offset);
     z-index: 1;
   }
 }

@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import styles from "./AppTemplate.module.css";
 
+import AppSkipLink from "~/components/molecules/AppSkipLink";
+
 import AppNav from "~/components/organisms/AppNav";
 import AppHome from "~/components/pages/AppHome";
 
@@ -14,9 +16,10 @@ const AppTemplate: FC = () => (
     <div className={styles.appTemplate}>
       <header>
         <h1 className="sr-only">Vite React Test App</h1>
+        <AppSkipLink href="#main" />
         <AppNav />
       </header>
-      <main className={styles.appTemplatePage}>
+      <main className={styles.appTemplatePage} id="main">
         <Routes>
           <Route path="/" element={<AppHome />} />
           <Route

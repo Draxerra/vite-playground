@@ -29,11 +29,11 @@ export default defineConfig({
         name: "Vite React App",
         short_name: "Vite React",
         description: "Basic vite react app",
-        theme_color: "#FFFFFF",
+        theme_color: "#79bbd2",
         start_url: ".",
         orientation: "portrait",
         display: "standalone",
-        background_color: "#000000",
+        background_color: "#e3e7e8",
         icons: [
           {
             src: "logo-192x192.png",
