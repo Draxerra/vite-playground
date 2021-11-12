@@ -35,10 +35,6 @@
     background-color: var(--clr-primary-hover);
   }
 
-  &:focus {
-    outline: none;
-  }
-
   &:focus-visible {
     outline: var(--outline-width) solid;
     outline-offset: var(--outline-offset);
